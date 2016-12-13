@@ -1,8 +1,41 @@
-# date
+# Carne Asada
 
 install https://fb.me/react-devtools
 
+INSTALL PROCESS: npm install, make sure you're using npm 3.10.8 and node 6.9.1 or higher
+
 run 'npm start' to start
+
+
+LINKS TO DOCUMENT:
+
+http://redux.js.org/
+
+https://babeljs.io/
+
+https://facebook.github.io/react/
+
+https://webpack.github.io/
+
+http://singlepageappbook.com/goal.html
+
+http://adamsilver.io/articles/the-disadvantages-of-single-page-applications/
+
+http://stackoverflow.com/questions/21862054/single-page-application-advantages-and-disadvantages
+
+https://www.dialogtech.com/blog/technically-speaking/technically-speaking-the-pros-and-cons-of-single-page-applications-spas
+
+https://blog.4psa.com/an-intro-into-single-page-applications-spa/
+
+http://expressjs.com/
+
+https://nodejs.org/en/
+
+https://github.com/creationix/nvm
+
+https://www.npmjs.com/
+
+https://firebase.google.com/
 
 TODO:
 
@@ -20,9 +53,9 @@ download and install linters -DONE
 
 remove all old crap -Done
 
-first git push
+first git push -DONE
 
-add redux
+add redux - DONE
 
 add in firebase to client side
 
