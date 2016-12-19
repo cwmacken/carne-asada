@@ -37,6 +37,17 @@ https://www.npmjs.com/
 
 https://firebase.google.com/
 
+http://blog.krawaller.se/posts/a-react-redux-firebase-app-with-authentication/
+
+https://react-bootstrap.github.io/
+
+https://medium.com/google-cloud/how-secure-is-your-firebase-ec4eb882f34b#.8fu394u7e
+
+http://stackoverflow.com/questions/22143257/how-is-my-data-secure-with-firebase
+
+https://github.com/react-bootstrap/react-router-bootstrap
+
+
 TODO:
 
 render hello with react- DONE
@@ -57,16 +68,20 @@ first git push -DONE
 
 add redux - DONE
 
-add in firebase to client side
+add in firebase auth to client side - Done
 
-add bootstrap with no jquery
+add bootstrap with no jquery - DONE
 
 test back end running with post and routes
 
-production build and host on server
+production build and host on server - this will be annoyingev
+
+clean up
+    - auth
+    - components and modules
 
 document
 
 add to git for public and make public
 
-base project, surf project, free current surf reports.. add daily texting
+base project, surf project, free current surf reports.. add daily texting w/ cron job

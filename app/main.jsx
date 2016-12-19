@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Index from './index/index.jsx';
-import About from './about/about.jsx';
-import Error from './error/error.jsx'
+import Index from './components/index/index.jsx';
+import Signup from './components/signup/signup.jsx';
+import Error from './components/error/error.jsx'
 import { Router, Route, Link, browserHistory, IndexRoute} from 'react-router'
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk';
 import { Provider } from 'react-redux'
-import todoApp from './redux/reducers'
+import app from './redux/reducers'
 
-const store = createStore(todoApp)
+const store = createStore(
+  app,
+  applyMiddleware(thunk)
+)
 
 const App = React.createClass({
   render() {
@@ -26,7 +30,7 @@ ReactDOM.render((
     <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Index}/>
-        <Route path="/about" component={About}/>
+        <Route path="/signup" component={Signup}/>
         <Route path="*" component={Error}/>
       </Route>
     </Router>
