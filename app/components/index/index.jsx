@@ -4,7 +4,7 @@ import { Button, Grid, Row, Col, Navbar, Nav, NavItem, NavDropdown, MenuItem } f
 import { LinkContainer } from 'react-router-bootstrap'
 import { Link } from 'react-router'
 import { connect, getState } from 'react-redux'
-import { sampleOne, sampleTwo, watchUserChange, login, signout} from '../../redux/actions'
+import { sampleOne, sampleTwo, watchUserChange, login, signout, getTest, postTest} from '../../redux/actions'
 import Navbarcomp from '../navbar/navbar.jsx'
 
 class Index extends React.Component {
@@ -66,15 +66,31 @@ class Index extends React.Component {
         </Row >
         <Row>
           <Col xs={12}>
-            <button onClick={this.props.onButtonClick} >Click Me</button>
-              <h1>{this.props.number}</h1>
+            <h1>GET Endpoint Sample</h1>
+            <button onClick={this.props.getTest} >GET TEST</button>
+            <h1>{this.props.endpoint.text}</h1>
           </Col>
         </Row>
         <Row>
           <Col xs={12}>
+            <h1>POST Endpoint Sample</h1>
+            <button onClick={this.props.postTest} >POST TEST</button>
+            <h1>{this.props.endpoint.postText}</h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12}>
+            <h1>Client Sample One</h1>
+            <button onClick={this.props.onButtonClick} >Click Me</button>
+            <h2>{this.props.number}</h2>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12}>
+            <h1>Client Sample Two</h1>
             <h3>Name:</h3>
             <input value={this.state.value}  onChange={this.handleChange} />
-            <h1>{this.props.name}</h1>
+            <h3>{this.props.name}</h3>
             <button type="submit" onClick={this.handleSubmit} >Submit</button>
           </Col>
         </Row>
@@ -119,7 +135,8 @@ const mapStateToProps = (state) => {
   return {
     number: state.sampleOne.num,
     name: state.sampleTwo.name,
-    auth: state.auth
+    auth: state.auth,
+    endpoint: state.endpoint
   }
 }
 
@@ -142,6 +159,12 @@ const mapDispatchToProps = (dispatch) => {
     },
     watchUserChange: () =>{
       dispatch(watchUserChange())
+    },
+    getTest: () => {
+      dispatch(getTest())
+    },
+    postTest: () => {
+      dispatch(postTest())
     }
   }
 }

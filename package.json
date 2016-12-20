@@ -10,6 +10,7 @@
     "prod": "NODE_ENV=production"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "babel-cli": "^6.18.0",
     "body-parser": "~1.10.1",
     "connect-flash": "*",

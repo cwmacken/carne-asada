@@ -9,7 +9,7 @@ export default class Navbarcomp extends React.Component {
       <Navbar collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link href="/">Menu Title Here</Link>
+            <Link href="/">App Name Goes Here</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

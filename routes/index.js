@@ -6,18 +6,22 @@ var http = require('http');
 var firebase = require("firebase");
 var request = require('request');
 
-/* GET home page. */
-router.get('/', function(req, res){
-    res.render('index', {
-      title: 'Index'
-    });
+router.get('/data', function(req, res){
+    res.json({
+        text: "get request is good!"
+    })
 });
 
-router.post('/postDataCall', function(req, res){
-    if(req.body.data === "yes"){
-      res.json({"data":"no"})
+router.post('/postData', function(req, res){
+
+    if(req.body.on === true){
+      res.json({
+          text:"its working, test: 1"
+      })
     }else{
-      res.json({"data":"yes"})
+      res.json({
+          text:"its working, test: 2"
+      })
     }
 });
 

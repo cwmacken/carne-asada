@@ -74,11 +74,13 @@ add bootstrap with no jquery - DONE
 
 test back end running with post and routes
 
-production build and host on server - this will be annoyingev
+production build and host on server - this will be annoying
 
 clean up
     - auth
     - components and modules
+
+have friends review
 
 document
 

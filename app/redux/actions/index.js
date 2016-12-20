@@ -1,5 +1,6 @@
 var Firebase = require("firebase")
 var config = require("../../../config")
+var axios = require('axios')
 
 // TODO: NEED TO MOVE THIS TO STARTUP SCRIPT
 Firebase.initializeApp(config.firebase);
@@ -25,6 +26,50 @@ module.exports = {
 					});
 				});
 
+
+		}
+	},
+
+	getTest: function(){
+		return function(dispatch){
+			axios.get('/data')
+				.then(function (response) {
+					dispatch({
+						type: "GETRESPONSE",
+						text: response.data.text
+					})
+				})
+				.catch(function (error) {
+					dispatch({
+						type: "GETRESPONSE",
+						text: "Error"
+					})
+			});
+		}
+	},
+
+	postTest: function(){
+		return function(dispatch, getState){
+
+			var state = getState().endpoint.postState
+
+			axios.post('/postData', {
+		    on: state
+		  })
+		  .then(function (response) {
+		    console.log(response);
+				dispatch({
+					type: "POSTRESPONSE",
+					postText: response.data.text
+				})
+		  })
+		  .catch(function (error) {
+		    console.log(error);
+				dispatch({
+					type: "POSTRESPONSE",
+					postText: "error"
+				})
+		  });
 
 		}
 	},
