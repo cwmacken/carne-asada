@@ -7,7 +7,8 @@
   },
   "scripts": {
     "start": "node app.js",
-    "prod": "NODE_ENV=production"
+    "prod": "NODE_ENV=production node app.js",
+    "build": "rimraf dist && webpack --config ./webpack.production.config.js --progress --profile"
   },
   "dependencies": {
     "axios": "^0.15.3",
@@ -34,11 +35,13 @@
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.24.1",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "redux-devtools": "^3.3.1",
+    "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.3",

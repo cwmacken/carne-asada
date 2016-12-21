@@ -2,9 +2,17 @@
 
 install https://fb.me/react-devtools
 
-INSTALL PROCESS: npm install, make sure you're using npm 3.10.8 and node 6.9.1 or higher
+INSTALL PROCESS: npm install
 
-run 'npm start' to start
+make sure you're using npm 3.10.8 and node 6.9.1 or higher
+
+check the above with node -v and npm -v
+
+DEV RUN: run 'npm start' to start
+
+PRODUCTION BUILD: npm run build
+
+PRODUCTION RUN: npm run prod
 
 
 LINKS TO DOCUMENT:
@@ -47,6 +55,14 @@ http://stackoverflow.com/questions/22143257/how-is-my-data-secure-with-firebase
 
 https://github.com/react-bootstrap/react-router-bootstrap
 
+https://github.com/mzabriskie/axios
+
+http://moduscreate.com/optimizing-react-es6-webpack-production-build/
+
+https://webpack.github.io/docs/cli.html
+
+https://github.com/webpack/extract-text-webpack-plugin
+
 
 TODO:
 
@@ -72,13 +88,22 @@ add in firebase auth to client side - Done
 
 add bootstrap with no jquery - DONE
 
-test back end running with post and routes
+test back end running with post and routes - DONE
 
-production build and host on server - this will be annoying
+production build and host on server - DONE
+
+tune production build
+    - LESS LOADER - DONE
+    - IMAGES - DONE
+    - look up auto prefixer --- dont need it now  -DONE
+    - compress - Done
+    - min redux - Done
+    - min react - Done
 
 clean up
     - auth
     - components and modules
+    - deal with broken link issue
 
 have friends review
 

@@ -57,14 +57,12 @@ module.exports = {
 		    on: state
 		  })
 		  .then(function (response) {
-		    console.log(response);
 				dispatch({
 					type: "POSTRESPONSE",
 					postText: response.data.text
 				})
 		  })
 		  .catch(function (error) {
-		    console.log(error);
 				dispatch({
 					type: "POSTRESPONSE",
 					postText: "error"

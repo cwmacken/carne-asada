@@ -11,8 +11,6 @@ const webpackMiddleware = require('webpack-dev-middleware');
 const wpConfig = require('./webpack.config.js');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 
-// var firebase = require("firebase");
-
 var app = express();
 
 app.engine('dust', consolidate.dust);
@@ -64,11 +62,15 @@ app.use('/', routes);
 //     });
 // });
 
+
+// TODO: this may cause problems, prob need to remove this REMOVE????
 app.set('port', process.env.PORT || 9090);
 
 const isDeveloping = process.env.NODE_ENV !== 'production';
 console.log("in dev mode", isDeveloping)
 console.log("in prod mode", !isDeveloping)
+
+// TODO: this may cause problems -REMOVE????
 const port = isDeveloping ? 9090 : process.env.PORT;
 
 if (isDeveloping) {
@@ -95,7 +97,7 @@ if (isDeveloping) {
   });
 } else {
   app.use(express.static(__dirname + '/dist'));
-  app.get('*', function response(req, res) {
+  app.get('/', function response(req, res) {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
   });
 }
