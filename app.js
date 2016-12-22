@@ -17,51 +17,9 @@ app.engine('dust', consolidate.dust);
 app.set('view engine', 'dust');
 app.set('views','./src');
 
-// Using the flash middleware provided by connect-flash to store messages in session
- // and displaying in templates
-// var flash = require('connect-flash');
-// app.use(flash());
-
-// uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(cookieParser());
-// app.use(express.static(path.join(__dirname, 'public')));
-
-// app.use('/public', express.static(__dirname + '/public'));
 
 app.use('/server', routes);
-
-// catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//     var err = new Error('Not Found');
-//     err.status = 404;
-//     next(err);
-// });
-
-// development error handler
-// will print stacktrace
-// if (app.get('env') === 'development') {
-//     app.use(function(err, req, res, next) {
-//         res.status(err.status || 500);
-//         res.render('error', {
-//             message: err.message,
-//             error: err
-//         });
-//     });
-// }
-
-// production error handler
-// no stacktraces leaked to user
-// app.use(function(err, req, res, next) {
-//     res.status(err.status || 500);
-//     res.render('error', {
-//         message: err.message,
-//         error: {}
-//     });
-// });
-
 
 // TODO: this may cause problems, prob need to remove this REMOVE????
 app.set('port', process.env.PORT || 9090);
