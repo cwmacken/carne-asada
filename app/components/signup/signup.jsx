@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router'
 require("./signup.less")
 import { connect, getState } from 'react-redux'
-import { Button, Grid, Row, Col, Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Button, Grid, Row, Col } from 'react-bootstrap';
 import {createAccount, watchUserChange} from '../../redux/actions'
 import Navbarcomp from '../navbar/navbar.jsx'
 
@@ -62,7 +62,6 @@ class Signup extends React.Component {
               <h1 className="about">Sign UP</h1>
             </Col>
           </Row>
-
           <Row>
             <Col xs={12}>
               Email:<input type="text" onChange={this.handleChangeEmail}/>
@@ -96,7 +95,8 @@ class Signup extends React.Component {
 
 
 const mapStateToProps = (state) => {
-  console.log(state)
+  // TODO: update with notifcation that the signup worked
+  // TODO: clean up this
   return {
     number: state.sampleOne.num,
     name: state.sampleTwo.name,

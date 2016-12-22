@@ -1,6 +1,6 @@
 import React from 'react';
 require("./index.less")
-import { Button, Grid, Row, Col, Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Button, Grid, Row, Col  } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap'
 import { Link } from 'react-router'
 import { connect, getState } from 'react-redux'
@@ -94,7 +94,6 @@ class Index extends React.Component {
             <button type="submit" onClick={this.handleSubmit} >Submit</button>
           </Col>
         </Row>
-
         <Row>
           <Col xs={12}>
             <h1>Login</h1>

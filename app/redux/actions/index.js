@@ -32,7 +32,7 @@ module.exports = {
 
 	getTest: function(){
 		return function(dispatch){
-			axios.get('/data')
+			axios.get('/server/data')
 				.then(function (response) {
 					dispatch({
 						type: "GETRESPONSE",
@@ -53,7 +53,7 @@ module.exports = {
 
 			var state = getState().endpoint.postState
 
-			axios.post('/postData', {
+			axios.post('/server/postData', {
 		    on: state
 		  })
 		  .then(function (response) {

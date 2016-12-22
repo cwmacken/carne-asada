@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Button, Grid, Row, Col, Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem  } from 'react-bootstrap';
 
 export default class Navbarcomp extends React.Component {
   render() {

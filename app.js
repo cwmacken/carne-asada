@@ -31,7 +31,7 @@ app.use(bodyParser.json());
 
 // app.use('/public', express.static(__dirname + '/public'));
 
-app.use('/', routes);
+app.use('/server', routes);
 
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {
@@ -90,14 +90,13 @@ if (isDeveloping) {
 
   app.use(middleware);
   app.use(webpackHotMiddleware(compiler));
-  // this may make all gets null and void??
-  app.get('/', function response(req, res) {
+  app.get('*', function response(req, res) {
     res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'dist/index.html')));
     res.end();
   });
 } else {
   app.use(express.static(__dirname + '/dist'));
-  app.get('/', function response(req, res) {
+  app.get('*', function response(req, res) {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
   });
 }

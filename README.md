@@ -64,6 +64,7 @@ https://webpack.github.io/docs/cli.html
 https://github.com/webpack/extract-text-webpack-plugin
 
 
+
 TODO:
 
 render hello with react- DONE
@@ -101,14 +102,20 @@ tune production build
     - min react - Done
 
 clean up
-    - auth
-    - components and modules
-    - deal with broken link issue
+    - auth - done
+    - components and modules - Done
+    - deal with broken link issue - Done, ping Isreal
+    - dev dependencies v dependencies - DONE
 
 have friends review
 
 document
 
 add to git for public and make public
+
+POST PUBLIC
+  - add firebase to front and back end
+  - comment
+  - research https://ifelse.io/2015/08/28/server-side-rendering-with-react-and-react-router/ and consider adding
 
 base project, surf project, free current surf reports.. add daily texting w/ cron job
