@@ -42,7 +42,7 @@ Run production version
 
 I built this boilerplate because I was constantly frustrated by other boilerplates either being just hello world examples, overly complicated or poorly documented. Building your own boilerplate, doing the research on options, dealing with the bugs will make you a better dev in the long run.
 
-This project actually started as a  [Jquery](https://jquery.com/) and  [Riot.js](http://riotjs.com/) project with a Node and Express backend. The original idea was to make a KISS (Keep It Simple Stupid) inspired framework a la [levels.io/](https://levels.io/) but my mentor pushed me strongly to use React and Redux out of fear that I would fall behind the curve (I had been working with React and Redux for the last year). While this project has grown and become more complex the core idea is still there, write your code, deploy your code and focus on the million other things that make a project/ business successful.
+This project actually started as a  [Jquery](https://jquery.com/) and  [Riot.js](http://riotjs.com/) project with a Node and Express backend. The original idea was to make a KISS (Keep It Simple Stupid) inspired framework a la [levels.io/](https://levels.io/) but my mentor pushed me strongly to use React and Redux out of fear that I would fall behind the curve (I have been working with React and Redux for the last year or so). While this project has grown and become more complex the core idea is still there, write your code, deploy your code and focus on the million other things that make a project/ business successful.
 
 -Conor
 
