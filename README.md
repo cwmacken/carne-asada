@@ -5,9 +5,7 @@ A boilerplate built with all the new fancy JS tools but setup for simple impleme
 
 Cloning: `git clone https://github.com/cwmacken/carne-asada.git`
 
-Installing Dependencies:
-
-`cd carne-asada`
+###Installing Dependencies
 
 **NOTE!** Use Node 6.9.1 or higher and NPM 3.10.8 or higher
 
@@ -19,18 +17,18 @@ check Node and NPM versions
 
 use [NVM](https://github.com/creationix/nvm) if you need to upgrade
 
-
-Install all the things!
+###Install all the things!
 
 `npm install`
 
-Start the boilerplate
+### Start the boilerplate
 
 `npm start`
 
+### It's Alive!
 Navigate to [http://localhost:9090/](http://localhost:9090/)
 
-## Compiling for Production
+## Compiling for Production and Running
 
 Build the production version
 
@@ -40,6 +38,14 @@ Run production version
 
 `npm run prod`
 
+## My Thoughts Behind Carne Asada
+
+I built this boilerplate because I was constantly frustrated by other boilerplates either being just hello world examples, overly complicated or poorly documented. Building your own boilerplate, doing the research on options, dealing with the bugs will make you a better dev in the long run.
+
+This project actually started as a Jquery [https://jquery.com/](https://jquery.com/) and Riot.js [http://riotjs.com/](http://riotjs.com/) project with a Node and Express backend. The original idea was to make a KISS (Keep It Simple Stupid) inspired framework a la [https://levels.io/](https://levels.io/) but my mentor pushed me strongly to use React and Redux out of fear that I would fall behind the curve (I had been working with React and Redux for the last year). While this project has grown and become more complex the core idea is still there, write your code, deploy your code and focus on the million other things that make a project/ business successful.
+
+-Conor
+
 ## Technologies Used
 
 You should know what you're using so you look smart and can use all the latest terms to up your nerd cred.
@@ -48,15 +54,15 @@ You should know what you're using so you look smart and can use all the latest t
 
 The backend server is Node running Express. This combination is the defacto standard and is well documented.
 
-NODE [https://nodejs.org/en/](https://nodejs.org/en/)
+NODE Docs [https://nodejs.org/en/](https://nodejs.org/en/)
 
-Express [http://expressjs.com/](http://expressjs.com/)
+Express Docs [http://expressjs.com/](http://expressjs.com/)
 
 ### NPM
 
 This is what you used to install everything in the getting started section. NPM is awesome and makes your life suck less. Yay!
 
-NPM [https://www.npmjs.com/](https://www.npmjs.com/)
+[https://www.npmjs.com/](https://www.npmjs.com/)
 
 ### React
 
@@ -71,7 +77,7 @@ React Docs [https://react-bootstrap.github.io/](https://react-bootstrap.github.i
 
 Redux is the state container for your app. While they are often used closely React is not Redux and Redux is not React. The best advice I can give you is to take a day and build a small React app or two; then go through the Redux docs and add Redux to your already existing React apps
 
-Redux Docs [http://redux.js.org/](http://redux.js.org/)
+[http://redux.js.org/](http://redux.js.org/)
 
 
 ### Babel
@@ -80,32 +86,53 @@ Babel converts ES6 ( aka ES2015, ES2016,  ES-fancy-hipster-speak ) in ES5 (aka w
 
 In theory as browsers adopt ES6 you wont need Babel, but for now your lead dev (or lead dev hiring you) will want you to know ES6 ..... so you're stuck with Babel (or similar tech)
 
-Babel Docs [https://babeljs.io/](https://babeljs.io/)
+[https://babeljs.io/](https://babeljs.io/)
 
 
 ### Webpack
 
 Welcome to Webpack hell. Webpack compiles all the little components you wrote into a functioning website. By its nature Webpack will be your undoing, enjoy!
 
-Webpack Docs [https://webpack.github.io/](https://webpack.github.io/)
+[https://webpack.github.io/](https://webpack.github.io/)
+
+### LESS
+
+I'm used to and prefer LESS.
+
+http://lesscss.org/
 
 ### Bootstrap
 
-Bootstrap! Everyone loves Bootstrap unless you hate it. Technically this isn't Bootstrap but rather React-Bootstrap (because Bootstrap uses Jquery and if you mention Jquery in 2016 someone will throw a Blackberry at your head and tell Yahoo couldn't possibly fail)
+Bootstrap! Everyone loves Bootstrap unless you hate it. Technically this isn't Bootstrap but rather React-Bootstrap (because Bootstrap uses Jquery and if you mention Jquery in 2016 someone will throw a Blackberry at your head and tell Yahoo has great security)
 
 React-Bootstrap Docs [https://react-bootstrap.github.io/](https://react-bootstrap.github.io/)
 
 **Pay attention to the Navbar component and how links are handled**
+
 React-Router-Boostrap [https://github.com/react-bootstrap/react-router-bootstrap](https://github.com/react-bootstrap/react-router-bootstrap)
 
 **Not Needed But Nice To Have**
+
 Bootstrap Docs [http://getbootstrap.com/](http://getbootstrap.com/)
 
+### Axios
+
+For making calls to your backend if you grew up on AJAX calls.
+
+Axios [https://github.com/mzabriskie/axios](https://github.com/mzabriskie/axios)
+
+### Firebase
+
+Firebase seems like a nice balance between security and ease of use to stand projects up quickly. So far I'm happy with what I've seen
+
+Firebase [https://firebase.google.com/](https://firebase.google.com/)
 
 
+## Helpful Links
 
+Below are some links that I found helpful while building this boilerplate.
 
-LINKS TO DOCUMENT:
+### What are Single Page Apps???
 
 http://singlepageappbook.com/goal.html
 
@@ -117,22 +144,20 @@ https://www.dialogtech.com/blog/technically-speaking/technically-speaking-the-pr
 
 https://blog.4psa.com/an-intro-into-single-page-applications-spa/
 
-https://fb.me/react-devtools
+### Thanks to the creators of these repos, I based a lot of my decisions off the code below
 
-
-https://firebase.google.com/
+https://github.com/christianalfoni/webpack-express-boilerplate
 
 http://blog.krawaller.se/posts/a-react-redux-firebase-app-with-authentication/
 
-
-https://medium.com/google-cloud/how-secure-is-your-firebase-ec4eb882f34b#.8fu394u7e
-
-http://stackoverflow.com/questions/22143257/how-is-my-data-secure-with-firebase
-
-https://github.com/mzabriskie/axios
-
-http://moduscreate.com/optimizing-react-es6-webpack-production-build/
+### Understanding Webpacks CLI
 
 https://webpack.github.io/docs/cli.html
 
+### Compiling LESS to CSS for production
+
 https://github.com/webpack/extract-text-webpack-plugin
+
+### Turning a 7.5MB  build into a 823kb build
+
+http://moduscreate.com/optimizing-react-es6-webpack-production-build/
