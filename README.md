@@ -107,11 +107,11 @@ Bootstrap! Everyone loves Bootstrap unless you hate it. Technically this isn't B
 
 React-Bootstrap Docs [https://react-bootstrap.github.io/](https://react-bootstrap.github.io/)
 
-####Pay attention to the Navbar component and how links are handled
+###### Pay attention to the Navbar component and how links are handled
 
 React-Router-Boostrap [https://github.com/react-bootstrap/react-router-bootstrap](https://github.com/react-bootstrap/react-router-bootstrap)
 
-####Not Needed But Nice To Have
+###### Not Needed But Nice To Have
 
 Bootstrap Docs [http://getbootstrap.com/](http://getbootstrap.com/)
 
