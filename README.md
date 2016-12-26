@@ -1,5 +1,5 @@
 # Carne Asada Boilerplate
-A boilerplate built with all the new fancy JS tools but setup for simple implementation and deployment. A KISS focused framework (as much as one can...).
+A boilerplate built with all the new fancy JS tools but setup for simple implementation and deployment. A KISS focused framework (as much as one can).
 
 ## Getting Started
 
@@ -40,21 +40,21 @@ Run production version
 
 ## My Thoughts Behind Carne Asada
 
-I built this boilerplate because I was constantly frustrated by other boilerplates either being just hello world examples, overly complicated or poorly documented. Building your own boilerplate, doing the research on options, dealing with the bugs will make you a better dev in the long run.
+I built this boilerplate because I was constantly frustrated by other boilerplates being just hello world examples, overly complicated, or poorly documented. Building your own boilerplate, doing the research on options, and dealing with the bugs will make you a better dev in the long run.
 
-This project actually started as a  [Jquery](https://jquery.com/) and  [Riot.js](http://riotjs.com/) project with a Node and Express backend. The original idea was to make a KISS (Keep It Simple Stupid) inspired framework a la [levels.io/](https://levels.io/) but my mentor pushed me strongly to use React and Redux out of fear that I would fall behind the curve (I have been working with React and Redux for the last year or so). While this project has grown and become more complex the core idea is still there, write your code, deploy your code and focus on the million other things that make a project/ business successful.
+This project actually started as a [Jquery](https://jquery.com/) and [Riot.js](http://riotjs.com/) project with a Node and Express backend. The original idea was to make a KISS (Keep It Simple Stupid) inspired framework a la [levels.io/](https://levels.io/) but my mentor pushed me strongly to use React and Redux out of fear that I would fall behind the curve (I have been working with React and Redux for the last year or so). While this project has grown and become more complex, the core idea is still there; write your code, deploy your code, and focus on the million other things that make a project/ business successful.
 
 -Conor
 
 ## Technologies Used
 
-You should know what you're using so you look smart and can use all the latest terms to up your nerd cred.
+You should know what you're using so you look smart and can use all the latest terminology to up your nerd-cred.
 
 ### Node and Express
 
 The backend server is Node running Express. This combination is the defacto standard and is well documented.
 
-NODE Docs [https://nodejs.org/en/](https://nodejs.org/en/)
+Node Docs [https://nodejs.org/en/](https://nodejs.org/en/)
 
 Express Docs [http://expressjs.com/](http://expressjs.com/)
 
@@ -66,32 +66,32 @@ This is what you used to install everything in the getting started section. NPM 
 
 ### React
 
-React is the coolest of cool things to use right now. You want to be hip. Basically instead of one giant JS file and one giant DOM file you make little components that have just the DOM and JS you need. This is a gross over simplification but it helps.
+React is the coolest of cool things to use right now. You want to be hip. Basically, instead of one giant JS file and one giant DOM file, you make little components that have just the DOM and JS you need. This is a gross over simplification but it helps.
 
-If you want to read more about what React is and how it is used these links will help [http://www.funnyant.com/reactjs-what-is-it/](http://www.funnyant.com/reactjs-what-is-it/) and [https://www.quora.com/profile/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look](https://www.quora.com/profile/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look)
+If you want to read more about what React is and how it is used these links will help: [http://www.funnyant.com/reactjs-what-is-it/](http://www.funnyant.com/reactjs-what-is-it/) and [https://www.quora.com/profile/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look](https://www.quora.com/profile/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look)
 
 
 React Docs [https://react-bootstrap.github.io/](https://react-bootstrap.github.io/)
 
 ### Redux
 
-Redux is the state container for your app. While they are often used closely React is not Redux and Redux is not React. The best advice I can give you is to take a day and build a small React app or two; then go through the Redux docs and add Redux to your already existing React apps
+Redux is the state container for your app. While they are often used closely, React is not Redux and Redux is not React. The best advice I can give is to take a day and build a small React app or two, then go through the Redux docs and add Redux to your already existing React apps.
 
 [http://redux.js.org/](http://redux.js.org/)
 
 
 ### Babel
 
-Babel converts ES6 ( aka ES2015, ES2016,  ES-fancy-hipster-speak ) in ES5 (aka what your browser knows)
+Babel converts ES6 ( aka ES2015, ES2016,  ES-fancy-hipster-speak ) in ES5 (what your browser knows)
 
-In theory as browsers adopt ES6 you wont need Babel, but for now your lead dev (or lead dev hiring you) will want you to know ES6 ..... so you're stuck with Babel (or similar tech)
+In theory, as browsers adopt ES6 you won't need Babel, but for now your lead dev (or lead dev hiring you) will want you to know ES6... so you're stuck with Babel (or similar).
 
 [https://babeljs.io/](https://babeljs.io/)
 
 
 ### Webpack
 
-Welcome to Webpack hell. Webpack compiles all the little components you wrote into a functioning website. By its nature Webpack will be your undoing, enjoy!
+Welcome to Webpack hell. Webpack compiles all the little components you wrote into a functioning website. By its nature Webpack will be at risk of odd errors. Enjoy!
 
 [https://webpack.github.io/](https://webpack.github.io/)
 
@@ -103,7 +103,7 @@ http://lesscss.org/
 
 ### Bootstrap
 
-Bootstrap! Everyone loves Bootstrap unless you hate it. Technically this isn't Bootstrap but rather React-Bootstrap (because Bootstrap uses Jquery and if you mention Jquery in 2016 someone will throw a Blackberry at your head and tell Yahoo has great security)
+Bootstrap! Everyone loves Bootstrap, unless you hate Bootstrap. Technically, this isn't Bootstrap but rather React-Bootstrap (because Bootstrap uses Jquery and if you mention Jquery in 2016 someone will throw a Blackberry at your head and tell you Yahoo has great security).
 
 React-Bootstrap Docs [https://react-bootstrap.github.io/](https://react-bootstrap.github.io/)
 
@@ -123,7 +123,7 @@ Axios [https://github.com/mzabriskie/axios](https://github.com/mzabriskie/axios)
 
 ### Firebase
 
-Firebase seems like a nice balance between security and ease of use to stand projects up quickly. So far I'm happy with what I've seen
+Firebase seems like a nice balance between security and ease of use to stand projects up quickly. So far I'm happy with what I've seen.
 
 Firebase [https://firebase.google.com/](https://firebase.google.com/)
 
