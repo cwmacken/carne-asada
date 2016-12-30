@@ -1,5 +1,5 @@
 import React from 'react';
-var broke = require('../../../assets/images/youBlewIt.jpg')
+var broke = require('../../assets/images/youBlewIt.jpg')
 import { Link } from 'react-router'
 import Navbarcomp from '../navbar/navbar.jsx'
 

@@ -8,7 +8,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
  devtool: 'cheap-module-source-map',
  entry: [
-    path.join(__dirname, 'app/main.jsx')
+    path.join(__dirname, 'src/main.jsx')
  ],
  output: {
    path: path.join(__dirname, '/dist/'),
@@ -18,7 +18,7 @@ module.exports = {
  plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new HtmlWebpackPlugin({
-      template: 'app/index.tpl.html',
+      template: 'src/index.tpl.html',
       inject: 'body',
       filename: 'index.html'
    }),

@@ -46,6 +46,35 @@ This project actually started as a [Jquery](https://jquery.com/) and [Riot.js](h
 
 -Conor
 
+## Structure
+
+### src
+This is where the most of your work will be done.
+
+src/assets contains all images, fonts and any other assets that you want to reference throughout the application (kept in separate directories for clarity).
+
+src/components contains all individual components used throughout the application, each component is housed in its own directory containing a .jsx file and any accompanying files.
+
+src/redux contains all redux logic (actions and reducers). The documentation on Redux can be found [here](http://redux.js.org/).
+
+src/index.tpl.html is the base HTML template that main.jsx binds to. Be careful editing this file, as this is a base file of your application.
+
+src/main.jsx, this file contains all your client side routes and creates your redux store. More information on React Router can be found [here](https://github.com/ReactTraining/react-router).
+
+### routes
+
+routes/index.js, this file establishes all your backend routes. As noted in the file the ./routes/index.js file in brought in under the /server sub directory; this means that all routes in the routes/index.js have /server in their URL. This helps avoid some headaches dude to the fact that we are rendering the views on the client's browser.
+
+### base files
+
+config.js contains all configurations (API keys, static domains, references that differ between dev and production)
+
+app.js establishes the node/express backend, base level changes should be made here.
+
+.babelrc converts ES2015 to ES5
+
+webpack.config.js and webpack.production.config.js build their respective versions of your app.
+
 ## Technologies Used
 
 You should know what you're using so you look smart and can use all the latest terminology to up your nerd-cred.
