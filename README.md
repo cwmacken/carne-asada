@@ -48,12 +48,12 @@ This project actually started as a [Jquery](https://jquery.com/) and [Riot.js](h
 
 ## Structure
 
-### src
+### Src
 This is where the most of your work will be done.
 
-src/assets contains all images, fonts and any other assets that you want to reference throughout the application (kept in separate directories for clarity).
+src/assets contains all images, fonts and any other assets that you want to reference throughout your application (kept in separate directories for clarity).
 
-src/components contains all individual components used throughout the application, each component is housed in its own directory containing a .jsx file and any accompanying files.
+src/components contains all individual components used throughout the application, each component is housed in its own directory containing a .jsx file and any accompanying files (less files for instance).
 
 src/redux contains all redux logic (actions and reducers). The documentation on Redux can be found [here](http://redux.js.org/).
 
@@ -61,11 +61,11 @@ src/index.tpl.html is the base HTML template that main.jsx binds to. Be careful 
 
 src/main.jsx, this file contains all your client side routes and creates your redux store. More information on React Router can be found [here](https://github.com/ReactTraining/react-router).
 
-### routes
+### Routes
 
-routes/index.js, this file establishes all your backend routes. As noted in the file the ./routes/index.js file in brought in under the /server sub directory; this means that all routes in the routes/index.js have /server in their URL. This helps avoid some headaches dude to the fact that we are rendering the views on the client's browser.
+routes/index.js, this file establishes all your backend routes. ./routes/index.js is brought in under the /server sub directory; this means that all routes in the routes/index.js have /server/ in their URL. This helps avoid some headaches associated with rendering the views on the client's browser.
 
-### base files
+### Base files
 
 config.js contains all configurations (API keys, static domains, references that differ between dev and production)
 
