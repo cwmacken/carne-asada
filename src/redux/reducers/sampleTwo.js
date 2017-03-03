@@ -3,14 +3,14 @@ const initialState = {
 }
 
 const sampleDos = (state = initialState, action) => {
-  switch (action.type) {
-    case 'SAMPLETWO':
-      return {
-        name: action.text
-      }
-    default:
-      return state
-  }
+    switch (action.type) {
+        case 'SAMPLETWO':
+            return {
+                name: action.text
+            }
+        default:
+            return state
+    }
 }
 
 export default sampleDos

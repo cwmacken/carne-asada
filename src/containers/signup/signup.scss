@@ -1,0 +1,13 @@
+@import '../../assets/styles/base.scss';
+$baseFontSize: 30px;
+$baseFontColor: blue;
+
+.defaultFont {
+	color: $baseFontColor;
+	font-size: $baseFontSize;
+}
+
+.about {
+	@extend .defaultFont;
+	@extend .default;
+}

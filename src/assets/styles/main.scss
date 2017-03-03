@@ -1,0 +1,11 @@
+@import './base.scss';
+
+body {
+	margin-top: 10px;
+	@media screen and (min-width: $break-small) {
+		margin-top: 20px;
+	}
+	@media screen and (min-width: $break-large ) {
+		margin-top: 30px;
+	}
+}

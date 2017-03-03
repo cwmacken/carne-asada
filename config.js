@@ -12,16 +12,16 @@ config.env = {
 config.env[currentEnv] = true;
 
 config.firebase = {
-  apiKey: "AIzaSyBDugxOr0kCfZ6Vxn4JQomt4uB-0W1SE88",
-  authDomain: "carneasada-f0617.firebaseapp.com"
+    apiKey: "AIzaSyBDugxOr0kCfZ6Vxn4JQomt4uB-0W1SE88",
+    authDomain: "carneasada-f0617.firebaseapp.com"
 }
 
 // Set Values
-if(currentEnv === 'production'){
+if (currentEnv === 'production') {
 
 }
 
-if(currentEnv === 'local'){
+if (currentEnv === 'local') {
 
 }
 
