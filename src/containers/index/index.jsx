@@ -20,8 +20,6 @@ class Index extends React.Component {
     constructor(props) {
         super(props);
 
-        console.log(this.props.number)
-
         this.state = {
             value: this.props.name,
             email: null,
@@ -63,7 +61,6 @@ class Index extends React.Component {
     }
 
     render() {
-        console.log("redner")
         return (
             <div>
                 <Navbarcomp/>
@@ -72,7 +69,7 @@ class Index extends React.Component {
                         <Col xs={10} xsOffset={2} md={12} mdOffset={0}>
                             <h1 className="index">Index</h1>
                         </Col>
-                    </Row >
+                    </Row>
                     <Row>
                         <Col xs={12}>
                             <h1>GET Endpoint Sample</h1>
