@@ -202,6 +202,8 @@ Below are some links that I found helpful while building this boilerplate.
 
 ## Current TODO
 
-add cron jobs examples
+update npm packages
+
+add mongoDB example
 
 add libs example
